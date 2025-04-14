@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(to right, #b93e3e, #d57c3c, #d9bf55);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+  }
+
+  header h1 {
+    width: 20rem ;
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .shinchan-dance {
+    width: 10rem;
+   padding: 0%;
+   margin: 0%;
+  }
+
+  
+  #theme-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .hero {
+      margin-top: 4rem;
+      height: 50rem;
+      width: auto;
+    background-image: url('bg.jpeg');
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    padding: 8rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+  }
+
+  .hero button {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #facc15;
+    color: #1f2937;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hero button:hover {
+    background-color: #fbbf24;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .bg-white {
+    background-color: white;
+  }
+
+  .bg-gray {
+    background-color: #f3f4f6;
+  }
+  #about{
+    background: linear-gradient(to right, #f3cd44, #d1bf77);
+    color: brown;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #about h1 {
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+  .character {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgb(237, 199, 206);
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+  }
+  .character img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .description {
+    max-width: 600px;
+  }
+  #Memes{
+    background-image: url('memebg.jpeg');
+    background-size:cover;
+    background-position: center;
+  }
+  .meme {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .meme img {
+    height: 20%;
+    width: 20%;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .meme img:hover {
+    transform: scale(1.1);
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 170px;
+    border: none;
+  }
+  #episodes{
+    background-image: url('epibg.jpeg');
+    background-size:cover;
+    background-position: center;
+  }
+  .episodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  .bounce {
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .dark-mode {
+    background-color: #1f2937;
+    color: #f3f4f6;
+  }
+  
+  .dark-mode header {
+    background: linear-gradient(to right, #111827, #1f2937, #374151);
+  }
+  .dark-mode #episodes{
+    background: linear-gradient(to right, #111827, #1f2937, #374151);
+  }
+  .dark-mode #Memes{
+    background: linear-gradient(to right, #111827, #1f2937, #374151);
+  }
+  .dark-mode nav a {
+    color: #f3f4f6;
+  }
+  
+  .dark-mode .hero {
+    background-image: url('darkbg.jpeg');
+    background-size:cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .dark-mode .character {
+    background-color: #374151;
+    color: #f3f4f6;
+  }
+  
+  .dark-mode footer {
+    background-color: #000;
+  }
